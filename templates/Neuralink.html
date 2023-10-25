@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="sub_container">
+        <header class="text-center">
+            <h1 class="display-4">Stakeholder Interaction Game</h1>
+            <p class="lead">Immerse in the world of BCI technology, take on stakeholder roles, and navigate through challenges and decisions.</p>
+        </header>
+
+        <section id="gameObjective" class="mt-5">
+            <h2 class="mb-4">Objective</h2>
+            <p>The game aims to immerse participants in the world of BCI technology development, allowing them to take on different stakeholder roles, face challenges, make decisions, and experience the consequences of their choices.</p>
+        </section>
+
+        <section id="gameSetup" class="mt-5">
+            <h2 class="mb-4">Setup</h2>
+            <p>The game environment resembles a board game. Each player selects a stakeholder role (e.g., Neuroscientist, Investors, Competitors, etc.). Each role comes with a unique set of cards that represent their specific interests, concerns, and potential conflicts.</p>
+        </section>
+
+        <section id="stakeholderRoles" class="mt-5">
+            <h2 class="mb-4">Stakeholder Roles</h2>
+            <!-- Button and content structure for each role -->
+
+            <button onclick="toggleContent('contentNeuralink')">Neuralink's CEOs and Founders</button>
+            <div id="contentNeuralink" style="display:none;">
+                They have the highest influence over the direction of the company and have a high stake in its success.
+            </div>
+
+            <button onclick="toggleContent('contentInvestors')">Investors</button>
+        <div id="contentInvestors" style="display:none;">
+            They have put in funds and their interests align with the success of the project.
+        </div>
+
+
+        <button onclick="toggleContent('contentRegulatoryBodies')">Regulatory Bodies</button>
+        <div id="contentRegulatoryBodies" style="display:none;">
+            They have significant influence over the approval and use of the technology, but their direct stake in the financial success of Neuralink is lower.
+        </div>
+
+        <button onclick="toggleContent('contentPartnersAndSuppliers')">Partners and Suppliers</button>
+        <div id="contentPartnersAndSuppliers" style="display:none;">
+            Provide necessary technology or services to Neuralink but may not have a direct financial stake.
+        </div>
+
+        <button onclick="toggleContent('contentPatientsAndBCIUsers')">Patients and BCI Users</button>
+        <div id="contentPatientsAndBCIUsers" style="display:none;">
+            They may directly benefit or be impacted by the technology, but their individual influence over company decisions might be limited.
+        </div>
+
+        <button onclick="toggleContent('contentMedicalExperts')">Medical Experts and Neuroscientists</button>
+        <div id="contentMedicalExperts" style="display:none;">
+            They provide a medical and scientific perspective to Neuralink's technology.
+        </div>
+
+        <button onclick="toggleContent('contentCompetitors')">Competitors</button>
+        <div id="contentCompetitors" style="display:none;">
+            Even though their primary focus might be their own interests, they have a keen interest in the dynamics and successes of Neurallink.
+        </div>
+           <!-- ... Repeat for other scenarios ... -->
+        </section>
+
+        <section id="gameplay" class="mt-5">
+            <h2 class="mb-4">Gameplay</h2>
+            <ul>
+                <li><strong>Scenario Cards:</strong> At the start of each round, a scenario card is drawn. This card describes a situation or challenge related to BCI technology development.</li>
+                <li><strong>Decision Time:</strong> Players use their role-specific cards to decide how they would react to the scenario based on their stakeholder's interests and concerns. They must also verbalize their reasoning.</li>
+                <li><strong>Negotiation Phase:</strong> Players discuss and negotiate to find a solution that would satisfy the majority of stakeholders. They can use their cards to persuade, compromise, or form alliances.</li>
+            </ul>
+        </section>
+
+        <section id="scenarios" class="mt-5">
+            <h2 class="mb-4">Scenarios</h2>
+            <!-- Button and content structure for each scenario -->
+        <button onclick="toggleContent('contentDataBreachConcern')">Data Breach Concern</button>
+        <div id="contentDataBreachConcern" style="display:none;">
+            News reports suggest that a popular BCI product has vulnerabilities that could expose users' brain data to breaches.
+        </div>
+
+        <button onclick="toggleContent('contentEthicalDilemma')">Ethical Dilemma with AI Integration</button>
+        <div id="contentEthicalDilemma" style="display:none;">
+            A new technology allows BCI devices to integrate with AI, allowing users to "think" commands rather than physically issuing them. However, this brings up privacy and ethical concerns as the AI can "learn" from a user's thought patterns.
+        </div>
+
+
+        <button onclick="toggleContent('contentCostVsAccessibility')">Cost vs. Accessibility</button>
+        <div id="contentCostVsAccessibility" style="display:none;">
+            The latest BCI technology offers unprecedented accuracy and features, but it comes at a very high cost, making it unaffordable for many.
+        </div>
+
+        <button onclick="toggleContent('contentCulturalImplications')">Cultural and Social Implications</button>
+        <div id="contentCulturalImplications" style="display:none;">
+            BCI technology is met with skepticism in certain cultures and communities as it's seen as "intervening" with the human brain and consciousness.
+        </div>
+            <!-- ... Repeat for other scenarios ... -->
+        </section>
+
+        <section id="Game Cards" class="mt-5">
+            <h2 class="mb-4">Game Cards</h2>
+            <div id="game_card">
+                <p>The following link contains the roles and scenarios</p>
+                <a href="static/images/Toolkit Game card.pdf" target="_blank">Toolkit Game Cards</a>
+            </div>
+        </section>
+
+
+        <section id="request" class="mt-5">
+            <h2 class="mb-4">Request</h2>
+            <p>After finishing roleplay games, the players should fill the following diagram.</p>
+            <img src="/static/images/stakeholder.jpg" alt="Stakeholder Diagram" width="500">
+        </section>
+    </div>
+
+    <!-- JavaScript to toggle content (You can include this in a separate JS file or at the end of this HTML file) -->
+    <script>
+        function toggleContent(elementId) {
+            const element = document.getElementById(elementId);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+{% endblock %}

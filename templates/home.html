@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+{% endblock %}
+{% block content %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main class="px-3 mt-5">
+        <h1 id="h1">Welcome to Our Toolkit</h1>
+        <p class="lead">Toolkit can help us to better understand the problem and solve it!</p>
+        <p class="lead">
+            <a href="/login-page" class="btn btn-lg btn-secondary fw-bold border-white" id="logi">Login</a>
+        </p>
+    </main>
+</div>
+{% endblock %}

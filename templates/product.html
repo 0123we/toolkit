@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='product.css') }}">
+{% endblock %}
+{% block content %}
+   <main>
+<div id="background-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+
+        <div class="carousel-inner">
+            <h1 class="cc">product</h1>
+            <div class="carousel-item active" style="background-image: url('/static/images/registerbackground.jpg');">
+                <div class="aa">
+                    <h1>Chatbots based on GPT3.5</h1><br><br>
+                    <p>ChatRobot is an intelligent program that can interact with users through natural language.
+                        These bots can be used for various purposes such as customer service, sales, entertainmen
+                        t, and education. The advantage of ChatRobot is that it can provide service anytime,
+                        anywhere without the need for human intervention. Additionally, ChatRobot can improve its
+                        accuracy and speed of answering questions through learning and continuous improvement, thereby e
+                        nhancing user satisfaction and experience. Ultimately, the emergence of ChatRobot will change the
+                        way people interact with technology and have a profound impact on future social and business communication</p>
+                    <a href="/login-page" class="btn btn-lg btn-secondary fw-bold border-white">Try</a>
+                </div></div>
+            <div class="carousel-item" style="background-image: url('/static/images/regist1.jpg');">
+                <div class="aa">
+                    <h1>Chatbots based on GPT3.5</h1><br><br>
+                    <p>ChatRobot is an intelligent program that can interact with users through natural language.
+                        These bots can be used for various purposes such as customer service, sales, entertainmen
+                        t, and education. The advantage of ChatRobot is that it can provide service anytime,
+                        anywhere without the need for human intervention. Additionally, ChatRobot can improve its
+                        accuracy and speed of answering questions through learning and continuous improvement, thereby e
+                        nhancing user satisfaction and experience. Ultimately, the emergence of ChatRobot will change the
+                        way people interact with technology and have a profound impact on future social and business communication</p>
+                    <a href="/login-page" class="btn btn-lg btn-secondary fw-bold border-white">Try</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('/static/images/star1.jpg');">
+                <div class="aa">
+                    <h1>Chatbots based on GPT3.5</h1><br><br>
+                    <p>ChatRobot is an intelligent program that can interact with users through natural language.
+                        These bots can be used for various purposes such as customer service, sales, entertainmen
+                        t, and education. The advantage of ChatRobot is that it can provide service anytime,
+                        anywhere without the need for human intervention. Additionally, ChatRobot can improve its
+                        accuracy and speed of answering questions through learning and continuous improvement, thereby e
+                        nhancing user satisfaction and experience. Ultimately, the emergence of ChatRobot will change the
+                        way people interact with technology and have a profound impact on future social and business communication</p>
+                    <a href="/login-page" class="btn btn-lg btn-secondary fw-bold border-white">Try</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="product-features">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <img src="/static/images/R%20(1).jpg" alt="Feature 1" >
+                <h3>Large-scale pre-training</h3>
+                <p>GPT-3.5 was trained on over 57 billion words, which is nearly 4 times the amount used
+                    to train GPT-3. This scale of pre-training allows GPT-3.5 to perform well on multiple
+                    natural language processing tasks</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/dmt.jpg" alt="Feature 2">
+                <h3>Improved multi-model learning</h3>
+                <p>GPT-3.5 can handle multiple modalities of information such as text,
+                    images, sound, and more. This multi-modal learning allows GPT-3.5 to
+                    better understand and process various types of information in the real world.</p>
+            </div>
+            <div class="card">
+                <img src="/static/images/R3.png" alt="Feature 3">
+                <h3>Higher control and interpretability</h3>
+                <p>GPT-3.5 has higher control and interpretability in its pred
+                    iction and generation process. It can achieve specific outpu
+                    ts by controlling the inputs and better understand the logic behin
+                    d its generated results by analyzing the intermediate states. This fea
+                    ture makes GPT-3.5 more applicable in applications that require interpreta
+                    bility and control.</p>
+            </div>
+        </div>
+    </section>
+     <div id="yotube">
+  <iframe style="border: none;" width="700" height="500" src="https://www.youtube.com/embed/bS88NVwzeig"
+           title="YouTube video player" allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+</main>
+
+
+{% endblock %}

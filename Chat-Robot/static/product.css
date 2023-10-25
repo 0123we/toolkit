@@ -1,0 +1,122 @@
+
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+     background-color: #ffffff;
+
+        }
+        .fixed-top {
+            margin-bottom: 100px;
+        }
+        .back {
+            background: url('/static/images/registerbackground.jpg') no-repeat center center/cover;
+            height: 100vh;
+        }
+        .product-hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .product-hero-text {
+            color: #fff;
+            text-align: center;
+            max-width: 800px;
+        }
+        .product-hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .product-hero-text p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .product-features {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #313030;
+        }
+        .product-features h2 {
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: white;
+        }
+        .feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-basis: calc(33.333% - 20px);
+}
+
+        .card img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 16px;
+            color: black;
+        }
+        #yotube {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 10000px;
+            padding: 20px;
+            background-color: #363333;
+
+        }
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+        .cc{
+            color: #3e8e41;
+        }
+        .aa{
+            position: absolute;
+            top: 16%;
+            left: 50%;
+            transform: translateX(-50%);
+color: white;
+            padding: 10px;
+            font-weight: bolder;
+
+        }
+        .btn {
+  opacity: 0.8;
+}

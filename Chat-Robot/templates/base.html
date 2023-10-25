@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<title>{% block title %}Toolkit{% endblock %}</title>
+<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+<link href="https://www.w3school.com.cn/lib/bs/bootstrap.css" rel="stylesheet">
+<script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+<link rel="stylesheet" href="/static/base.css">
+{% block extra_css %}
+{% endblock %}
+
+<header class="fixed-top mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-robot"></i>Toolkit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="history" href="/history">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="product" href="/product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="documentation" href="/Neuralink">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contactus" href="/contactus">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+{% block content %}
+    <!-- 子模板的内容将会填充在这里 -->
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        const signOutBtn = document.getElementById("logout");  // logout button
+        signOutBtn.addEventListener("click", () => {
+            localStorage.removeItem("token");  // remove auth token from local storage
+            window.location.href = "/";  // redirect to home page
+        });
+    </script>
+{% endblock %}
+</body>
+</html>
+

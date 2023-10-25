@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat</title>
+      <link href="https://www.w3school.com.cn/lib/bs/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+      <script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
+      <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+      <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+      <link rel="stylesheet" href="/static/search.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidenav">
+
+        <button class="nav-button" onclick="location.href='/'"><i class="fas fa-cog"></i>Home</button>
+
+        <button class="nav-button" onclick="location.href='/contactus'"><i class="fa-regular fa-envelope"></i>Contact</button>
+
+        <button class="nav-button" id="logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+            <button class="nav-button" id="searca" onclick="location.href='/chat'"><i class="fa-solid fa-comment"></i>ChatMode(Text)</button>
+         <button class="nav-button" onclick="window.location.href='/search_page'"><i class="fa-regular fa-envelope"></i>Search</button>
+
+
+
+
+
+
+      </div>
+      <div class="search-container">
+        <h1>Search questions and answers</h1>
+        <form id="search-form">
+          <input type="text" id="keyword" placeholder="Keyword">
+          Start Date：<input type="date" id="start-date" >
+          End Date：<input type="date" id="end-date">
+          <button type="submit">Search</button><button id="download-search-pdf">download</button>
+        </form>
+        <div id="search-results"></div>
+      </div>
+    </div>
+    <script src="/static/javascripts/search.js"></script>
+
+  </body>
+
+</html>
+
+
+

@@ -1,0 +1,46 @@
+body {
+    padding-top: 5rem;
+    background-image: url('/static/images/index.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-container {
+    max-width: 42em;
+    padding-top: 3rem;
+}
+
+.footer {
+    padding: 1rem 0;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: #fff;
+}
+.logo{
+    height: 50px;
+}
+#h1{
+    font-weight: 900;
+    color: white;
+    margin-top: -250px;
+
+}
+#dada{
+    background-color: #333333;
+
+}
+.lead{
+ font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+button{
+    align-items: center;
+}
+#logi{
+    margin-left: 220px;
+    font-weight: 900;
+}

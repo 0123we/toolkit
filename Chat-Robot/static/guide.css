@@ -1,0 +1,35 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: snow;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gpt-3_5-info {
+            max-width: 800px;
+            margin-left: 33%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3, p {
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        #io{
+            margin-left: 20%;
+        }

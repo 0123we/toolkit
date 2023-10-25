@@ -1,0 +1,86 @@
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #282626;
+        margin-top: 80px;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .card-body {
+        height: 320px;
+        background-color: #333333;
+        color: #f4f4f4;
+    }
+
+    .display-4 {
+        color: white;
+    }
+
+    #future {
+        color: white;
+    }
+
+    #explore {
+        background-color: #313030;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    #explore:hover {
+        background-color: #8d8b8b;
+        text-decoration: none;
+        color: white;
+    }
+
+    #lian {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar img {
+        margin-right: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .text-center {
+        margin-top: 40px;
+    }
+
+    #milestones {
+        margin-bottom: 60px;
+    }
+
+.mb-4{
+    color: #f4f4f4;
+}
+.lead{
+    color: white;
+}

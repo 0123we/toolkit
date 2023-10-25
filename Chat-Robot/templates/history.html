@@ -1,0 +1,108 @@
+
+{% extends "base.html" %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='history.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="container mt-5">
+    <header class="text-center">
+        <h1 class="display-4">"History of Artificial Intelligence Development"</h1>
+        <p class="lead">Explore the development process of artificial intelligence, including important breakthroughs and challenges in this field.</p>
+    </header>
+
+    <section id="milestones" class="mt-5">
+         <a href="/chat" id="lian" class="btn btn-primary">Try ChatRobot</a>
+
+
+        <h2 class="mb-4"> "important milestone"</h2>
+        <div class="row">
+            <!-- Milestone 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/static/images/turing.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">1950 - "Turing test"</h5>
+                        <p class="card-text">Alan Turing proposed the Turing test: In 1950,
+                            Turing proposed the famous Turing test, which is a standard for measuring whether a computer has intelligence.
+                            The test involves a person determining whether they are conversing with a human or a computer
+                            based on the conversation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Milestone 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/static/images/1956-l.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">1956 - "Artificial Intelligence"</h5>
+                        <p class="card-text">In 1956, John McCarthy and a group of researchers proposed the concept of "Artificial Intel
+                            ligence" at the Dartmouth Conference, and defined it as "the study and design of intelligent agents, where a
+                            n intelligent agent is a system that perceives its environment and takes actions that maximize its chan
+                            ces of success in achieving its goals".</p>
+</div>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="col-md-4">
+<div class="card">
+<img src="/static/images/Deep-learning.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">1980 - "deep learning"</h5>
+<p class="card-text">In the late 1980s and early 1990s, deep learning began to
+    emerge as an important branch of artificial intelligence. Deep learning models
+    can simulate human neural networks and achieve complex pattern recognition
+    and prediction tasks through connections between multiple layers of neurons.</p>
+</div>
+</div>
+</div>
+            <div class="col-md-4">
+<div class="card">
+<img src="/static/images/ibm-watson.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">2011 - "IBM's Watson artificial intelligence"</h5>
+<p class="card-text">In 2011, IBM's Watson artificial intelligence system wo
+    n the famous American TV game show Jeopardy!, becoming an important mi
+    lestone in the field of artificial intelligence.</p>
+</div>
+</div>
+</div>
+            <div class="col-md-4">
+<div class="card">
+<img src="/static/images/alphago.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">2016 - "AlphaGo"</h5>
+<p class="card-text">In 2016, Google's artificial intelligence system AlphaGo defeated S
+    outh Korean Go champion Lee Sedol, marking a breakthrough in the ability of artific
+    ial intelligence systems to play complex strategy games.</p>
+</div>
+</div>
+</div>
+            <div class="col-md-4">
+<div class="card">
+<img src="/static/images/gpt3.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">2020 - "GPT-3"</h5>
+<p class="card-text">In 2020, OpenAI released the GPT-3 artificial intelligence s
+    ystem, which is currently one of the most advanced natural language processing
+    systems that can generate high-quality text and conversations. Its release has sparke
+    d many explorations and discussions on artificial intelligence technology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+        <section class="mt-5">
+        <h3 class="mb-4">"The Future About AI"</h3>
+        <p id="future">The future of artificial intelligence is highly promising,
+            with the potential to revolutionize various industries, including healthcare,
+            education, environment, robotics, and entertainment. AI has the potential to
+            enable more accurate diagnoses, personalized treatments, sustainable practices,
+            intelligent robots and automation systems, and advanced virtual and augmented reality
+            experiences. While the future of AI looks bright, we must also consider the ethical and
+            societal implications of these developments and use AI in responsible and beneficial ways. Ov
+            erall, we can expect to see continued progress in the development of more advanced AI technologies
+            that will positively impact our lives in many ways.</p>
+    </section>
+</div>
+
+{% endblock %}

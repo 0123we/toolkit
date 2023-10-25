@@ -1,0 +1,96 @@
+.sub_body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.sub_container {
+    max-width: 1200px;
+    margin: 50px 0 0 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub_container header.text-center {
+    margin-bottom: 40px;
+}
+
+.sub_container h1.display-4 {
+    color: #2C3E50;
+}
+
+.sub_container h2.mb-4 {
+    border-bottom: 3px solid #3498DB;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.sub_container p.lead {
+    font-size: 1.3em;
+}
+
+.sub_container section {
+    margin-bottom: 40px;
+}
+
+.sub_container button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498DB;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sub_container button:hover {
+    background-color: #2980B9;
+}
+
+.sub_container div[id^="content"] {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #3498DB;
+}
+
+.sub_container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sub_container li {
+    margin-bottom: 10px;
+}
+
+.sub_container li strong {
+    color: #3498DB;
+}
+
+#game_card {
+    border: 1px solid #bdc3c7;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#game_card a {
+    color: #3498DB;
+    text-decoration: none;
+    border-bottom: 1px dotted #3498DB;
+    transition: border-bottom 0.2s;
+}
+
+#game_card a:hover {
+    border-bottom: 1px solid #3498DB;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+

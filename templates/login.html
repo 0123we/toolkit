@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="/static/login.css">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="hero">
+            <div class="video-background">
+                <video src="/static/video/chat.mp4" autoplay loop controls muted></video>
+
+            </div>
+            <div class="form-container">
+                <form>
+                    <h2>Login</h2>
+                    <div><input type="text" id="email" placeholder="Email" required></div>
+                    <div><input type="password" id="password" placeholder="Password" required></div>
+                    <div><input type="button" value="Login" onclick="authenticate()"></div>
+                    <a href="/signup-page">Sign up</a>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    {% block extra_js %}
+    <script src="/static/javascripts/login.js"></script>
+    {% endblock %}
+{% endblock %}
